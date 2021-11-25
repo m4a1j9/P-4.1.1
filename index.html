@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="keywords" content="portfolio, портфолио, frontend, development">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+</head>
+
+<body>
+
+    <div class="parallax__shell">
+        <div class="parallax__wrapper-triangle" data-relative-input="true" id="move">
+            <div class="parallax__container-triangle" data-depth="0.3">
+                <div class="parallax__triangle"></div>
+            </div>
+        </div>
+
+        <div class="parallax__wrapper-lines">
+            <div class="parallax__container-lines" >
+                <div class="parallax__lines">
+                    <div class="parallax__line"></div>
+                    <div class="parallax__line"></div>
+                    <div class="parallax__line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax__wrapper-lines">
+            <div class="parallax__container-lines">
+                <div class="parallax__lines">
+                    <div class="parallax__line"></div>
+                    <div class="parallax__line"></div>
+                    <div class="parallax__line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax__wrapper-pbg pbg">
+            <div class="pbg__container">
+                <ul class="pbg__far parallax" data-speed="2">
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                    <li class="pbg__far-line"></li>
+                </ul>
+            </div>
+            <div class="pbg__container">
+                <ul class="pbg__middle parallax" data-speed="4">
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                    <li class="pbg__middle-line"></li>
+                </ul>
+            </div>
+            <div class="pbg__container">
+                <ul class="pbg__near parallax" data-speed="6">
+                    <li class="pbg__near-line"></li>
+                    <li class="pbg__near-line"></li>
+                    <li class="pbg__near-line"></li>
+                    <li class="pbg__near-line"></li>
+                    <li class="pbg__near-line"></li>
+                    <li class="pbg__near-line"></li>
+                    <li class="pbg__near-line"></li>
+                    <li class="pbg__near-line"></li>
+                </ul>
+            </div>
+            <div class="pbg__container">
+                <ul class="pbg__nearest parallax" data-speed="10">
+                    <li class="pbg__nearest-line"></li>
+                    <li class="pbg__nearest-line"></li>
+                    <li class="pbg__nearest-line"></li>
+                    <li class="pbg__nearest-line"></li>
+                    <li class="pbg__nearest-line"></li>
+                    <li class="pbg__nearest-line"></li>
+                    <li class="pbg__nearest-line"></li>
+                    <li class="pbg__nearest-line"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-container">
+        <div class="wellcome-bg"></div>
+    </div>
+    <header class="header" id="header">
+        <img src="img/bg/bg-triangle.png" alt="blue" class="triangle-blue section" id="wellcome">
+        <div class="header__container">
+
+            <div class="menu__logo logo">
+                <div class="logo__and">
+                    <p>And</p>
+                </div>
+                <div class="logo__rey">
+                    <p>rey</p>
+                </div>
+            </div>
+
+            <nav class="menu__nav nav">
+                <div class="nav__buttons">
+                    <a href="#wellcome" class="menu__link  _illumination" data-lang="nav__welcome">Welcome</a>
+                </div> 
+                <div class="nav__buttons">
+                    <a href="#projects" class="menu__link" data-lang="projects">Projects</a>
+                </div> 
+                <div class="nav__buttons">
+                    <a href="#skills" class="menu__link" data-lang="skills">Skills</a>
+                </div> 
+                <div class="nav__buttons">
+                    <a href="#about" class="menu__link"  data-lang="who?">Who?</a>
+                </div> 
+                <div class="nav__buttons">
+                    <a href="#work" class="menu__link" data-lang="contacts">Contacts</a>
+                </div>
+                <div class="nav__buttons lang">
+                    <span class="lang__choose eu" id="eu">eu</span>
+                    <img class="lang__flag" src="img/united-kingdom.png" alt="flag">
+
+                    <span class="lang__arrow"></span>
+                    <ul class="lang__sub-list">
+                        <li class="lang__switch" id="ru">
+                            <span class="lang__sub-link">ru</span>
+                            <img src="img/russia.png" alt="ru-flag" class="switch__flag">
+                        </li>
+                        <li class="lang__switch" id="ua">
+                            <span class="lang__sub-link">ua</span>
+                            <img src="img/ukraine.png" alt="ua-flag" class="switch__flag">
+                        </li>
+                        <li class="lang__switch" id="eu">
+                            <span class="lang__sub-link">eu</span>
+                            <img src="img/united-kingdom.png" alt="eu-flag" class="switch__flag">
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__tr-container _anim-items-1">
+                    <div class="menu__tr _anim-items-1"></div>
+                </div>
+            </nav>
+
+            <div class="menu__icon-wrapper">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="page">
+        <section class="spase"></section>
+        <section class="page__wellcome wellcome">
+            <div class="wellcome__container">
+                <div class="wellcome__good-afternoon _anim-items">
+                    <p data-lang="wellcome__good-afternoon">Good afternoon</p> 
+                </div>
+                
+                <div class="wellcome__and-wellcome _anim-items-2">
+                    <p data-lang="wellcome__and-wellcome">and welcome</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="page__offer offer" id="offer">
+            <div class="offer__bg-container">
+                <div class="offer__background"></div>
+            </div>
+            <div class="offer__container">
+                <div class="offer__container-title">
+                    <div class="offer__to-my-portfolio _anim-items">
+                        <p data-lang="offer__to-my-portfolio">to my portfolio</p>
+                    </div>
+                </div>
+                <div class="offer__container-button">
+                    <button class="offer__button _anim-items"  data-lang="offer__button">
+                        Random move
+                    </button>
+                </div>
+                <div class="offer__container-description">
+                    <div class="offer__description _anim-items">
+                        <p data-lang="offer__description">Here are some of my most recent projects made over the past year</p>
+                    </div>
+                </div>
+                <div class="offer__container-img">
+                    <img class="offer__img" src="img/jake.gif" alt="rnd-img">
+                </div>
+            </div>  
+            
+        </section>
+
+        <section class="page__projects projects section" id="projects">
+            <div class="slide__container-mini-slides">
+                <ul class="slide__mini-slides _anim-items">
+                </ul>
+            </div>
+            <div class="projects__container-title">
+                <div class="projects__title-background">
+                    <div class="projects__title _anim-items" data-lang="projects">
+                        Projects
+                    </div>
+                </div>
+            </div>
+            <div class="projects__shell">
+                <div class="projects__container-slide">
+                    <div class="projects__slide slide slide-0" id="slide0">
+                        <div class="slide__container-search">
+                            <div class="slide__search _anim-items">
+                                <input value="https//:Project_0" placeholder="Well, why did you erase it all?" class="slide__input"></input>
+                                <div class="slide__icons">
+                                    <img class="slide__cancel" src="img/cancel.png" alt="cancel">
+                                    <img class="slide__line" src="img/line.png" alt="line">
+                                    <img class="slide__magnifier" src="img/magnifier.png" alt="magnifier">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slide__container-content">
+                            <ul class="slide__space _anim-items">
+                            </ul>
+                            <div class="slide__container-container _anim-items-3"">
+                                <div class="slide__before"></div>
+                                <div class="slide__container-demo _anim-items-3">
+                                    <div class="slide__demo _anim-items-3">
+                                        <img class="slide__img" src="img/demo0.png" alt="beautiful website">
+                                    </div>
+                                </div>
+                                <div class="slide__after"></div>
+                            </div>
+            
+                            <div class="slide__preview">
+                                <img class="slide__img-preview _anim-items" src="img/demoPreview0.png" alt="website preview">
+                                <div class="slide__decription _anim-items" data-lang="slide__This-portfolio">
+                                    This portfolio
+                                </div>
+                                <button class="slide__link _anim-items">
+                                    <p data-lang="slide__link">link</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__end-container end">
+                <p class="end__description" data-lang="end__description">
+                    more projects are soon
+                </p>
+                <ul class="end__points">
+                    <li class="end__point"></li>
+                    <li class="end__point"></li>
+                    <li class="end__point"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="page__skills skills section" id="skills">
+            <div class="skills__title-background">
+                <div class="skills__title _anim-items">
+                    <p data-lang="skills">Skills</p>
+                </div>
+            </div>
+            <div class="skills__container-content">
+                <div class="skills__wrapper-chart">
+                    <ul class="skills__chart chart _anim-items-4">
+                        <li class="chart__skill">
+                            <div class="_anim-items-4">
+                                HTML
+                                <br>
+                                CSS
+                            </div>
+                        </li>
+                        <li class="chart__skill">
+                            <div class="_anim-items-4">
+                                Git
+                                <br>
+                                Figma
+                                <br>
+                                Adaptive
+                                <br>
+                                Layout
+                            </div>
+                        </li>
+                        <li class="chart__skill">
+                            <div class="_anim-items-4">
+                                Java
+                                <br>
+                                Script
+                            </div>
+                        </li>
+                        <li class="chart__skill">
+                            <div class="_anim-items-4">
+                                JQuery
+                                <br>
+                                SASS
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills__wrapper-up _anim-items-4">
+                    <div class="skills__container-up">
+                        <img src="img/graph2.png" alt="line" class="skills__graph"></img>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page__about about section" id="about">
+            <div class="about__title-background">
+                <div class="about__title _anim-items">
+                    <p data-lang="About__Me">About Me</p>
+                </div>
+            </div>
+            <div class="about__wrapper">
+                <div class="about__container-content">
+                    <div class="about__text _anim-items">
+                        <p data-lang="about__text">Hey! My name is Andrey Evgenievich. I am a junior Web developer, based in Russia, Novosibirsk. I am currently actively studying React JS and Node JS libraries. I am constantly learning new design tools and Web technologies along with new trends. Outside of work or self-study, I am interested in architecture, video games and learning new things, everything that inspires.</p>
+                    </div>
+                    <div class="about__photo ">
+                        <img class="_anim-items" src="img/me.png" alt="photo of the author">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page__work work section" id="work">
+            <div class="work__container-content">
+                <div class="work__together _anim-items" data-lang="work__together">
+                    Let’s Work Together
+                </div>
+    
+                <ul class="work__contacts">
+                    <button class="work__contact _anim-items" id="_copy">
+                        <img src="img/email.png" alt="email">
+                        <p>davidovandre2@gmail.com</p> 
+                    </button>
+                    <button class="work__contact _anim-items" id="_copy">
+                        <img src="img/telegram.png" alt="tg">
+                        <p>https://t.me/endru_e</p> 
+                    </button>
+                    <button class="work__contact _anim-items" id="_copy">
+                        <img src="img/phone-call.png" alt="phone">
+                        <p>+7 913 709 85 35</p> 
+                    </button>
+                    <button class="work__contact _anim-items" id="_copy">
+                        <img src="img/discord.png" alt="phone">
+                        <p>Thing#2451</p> 
+                    </button>
+                </ul>
+            </div>
+            <div class="work__wrapper-rt tr">
+                <img src="img/bg/bg-triangle.png" alt="blue" class="tr__tr">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/parallax.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
