@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "parallax-js": "^3.1.0",
+    "rellax": "^1.12.1"
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "first project with regular updates",
+  "main": "js/script.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4a1j9/4.0-portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "m4a1j9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m4a1j9/4.0-portfolio/issues"
+  },
+  "homepage": "https://github.com/m4a1j9/4.0-portfolio#readme"
+}
