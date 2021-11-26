@@ -1986,13 +1986,14 @@ main .wellcome .wellcome__container div._animate {
   }
 }
 
-.projects .projects__shell .projects__container-slide .projects__slide .slide__container-content .slide__preview .slide__link p {
+.projects .projects__shell .projects__container-slide .projects__slide .slide__container-content .slide__preview .slide__link a {
   font-size: 36px;
   font-family: Montserrat-Regular;
+  color: #000;
 }
 
 @media (max-width: 1320px) {
-  .projects .projects__shell .projects__container-slide .projects__slide .slide__container-content .slide__preview .slide__link p {
+  .projects .projects__shell .projects__container-slide .projects__slide .slide__container-content .slide__preview .slide__link a {
     font-size: calc(24px + 12 * ((100vw - 320px) / 1000));
   }
 }
