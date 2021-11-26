@@ -421,7 +421,7 @@ function alertCopy() {
             var _self = this;
             var xrhFile = new XMLHttpRequest();
             // подгрузка контента
-            xrhFile.open("GET", "./translations/" + this.lng + ".json", false);
+            xrhFile.open("GET", "./translations/" + this.lng + ".json");
             xrhFile.onreadystatechange = function () {
                 if (xrhFile.readyState === 4) {
                     if (xrhFile.status === 200 || xrhFile.status == 0) {
@@ -465,7 +465,6 @@ function alertCopy() {
 
         switch (lang) {
             case 'ru':
-                console.log(lang);
                 $('.slide__input').attr('placeholder', 'Ну, а зачем ты все это стер?');
                 break;
             case 'eu':

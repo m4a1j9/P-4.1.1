@@ -1,6 +1,6 @@
 /.vscode
+/#source
 /sass
-/js
 /.git
 package-lock.json
 package.json
