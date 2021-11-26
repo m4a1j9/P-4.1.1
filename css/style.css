@@ -1998,6 +1998,10 @@ main .wellcome .wellcome__container div._animate {
   }
 }
 
+.projects .projects__shell .projects__container-slide .projects__slide .slide__container-content .slide__preview .slide__link a:visited {
+  color: #000;
+}
+
 .projects .projects__shell .projects__container-slide .projects__slide .slide__container-content .slide__preview .slide__link:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
