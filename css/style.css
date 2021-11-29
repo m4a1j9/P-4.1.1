@@ -2007,6 +2007,7 @@ main .wellcome .wellcome__container div._animate {
 
 .projects .projects__shell .projects__container-slide .projects__slide .slide__container-content .slide__container-container .slide__container-demo .slide__demo .slide__img {
   width: 570px;
+  pointer-events: none;
 }
 
 @media (max-width: 1320px) {
