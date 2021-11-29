@@ -94,7 +94,8 @@ jQuery(function ($) {
         }, 1000);
 
         $('.nav').removeClass('_active');
-
+        $('html').removeClass('_lock');
+        $('.menu__icon').removeClass('_active');
         return false;
     });
 
