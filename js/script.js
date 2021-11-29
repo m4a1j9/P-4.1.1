@@ -119,59 +119,53 @@ jQuery(function ($) {
 //---------------------------------------------------------------------------------
 
 //Рандомная кнопка
-let rnd = Math.round(Math.random() * 10);
+//let rnd = Math.round(Math.random() * 10);
+
+let
+    btn = document.querySelector('.offer__button');
+btn.addEventListener('click', getRandomValue);
+
+
 
 function getRandomValue() {
-    let btn = document.querySelector('.offer__button'),
+    let
         img = document.querySelector('.offer__img');
-    if (rnd == 0) {
-        // Jake
-        btn.addEventListener('click', active);
 
-        function active() {
-            img.classList.toggle('_walking');
-        }
-    } else if (0 < rnd && rnd <= 3) {
-        // TODO Кнопка меняется местами
-        // Коддинг
-        btn.addEventListener('click', active);
+    if (!(img.classList.contains('_walking'))) {
+        let rnd = Math.round(Math.random() * 10);
+        //console.log(rnd);
 
-        function active() {
+        if (rnd == 0) {
+            // Jake
+            img.src = "img/jake.gif";
+
+        } else if (0 < rnd && rnd <= 3) {
+            // TODO Кнопка меняется местами
+            // Коддинг
             img.src = "img/code2.gif";
-            img.classList.toggle('_walking');
-        }
 
-    } else if (3 < rnd && rnd <= 6) {
-        // Коддинг
-        btn.addEventListener('click', active);
-
-        function active() {
+        } else if (3 < rnd && rnd <= 6) {
+            // Коддинг
             img.src = "img/code2.gif";
-            img.classList.toggle('_walking');
-        }
 
-    } else if (6 < rnd && rnd <= 9) {
-        // Осмотр
-        btn.addEventListener('click', active);
-
-        function active() {
+        } else if (6 < rnd && rnd <= 9) {
+            // Осмотр
             img.src = "img/QLg.gif";
-            img.classList.toggle('_walking');
-        }
 
-    } else if (rnd == 10) {
-        // Переворот сайна на 180 на 1 с
-        btn.addEventListener('click', rotate);
-
-        function rotate() {
+        } else if (rnd == 10) {
+            // Переворот сайна на 180 на 1 с
             document.documentElement.style.cssText = `transform: scaleX(-100%);`;
-            setTimeout(_ => document.documentElement.style.cssText = `transform: scaleX(100%);`, 3000);
+            img.style.cssText = `display: none`;
+            setTimeout(_ => {
+                document.documentElement.style.cssText = `transform: scaleX(100%);`
+                img.style.cssText = `display: block`;
+            }, 3000);
         }
-
     }
 
+
+    img.classList.toggle('_walking');
 }
-getRandomValue();
 
 
 //---------------------------------------------------------------------------------
@@ -338,8 +332,6 @@ if (animItems1.length > 0 || animItems2.length > 0) {
     }
 }
 
-//---------------------------------------------------------------------------------
-
 // Вертикальный parallax
 window.onload = function () {
     const parallaxes = document.querySelectorAll('.parallax');
@@ -371,6 +363,7 @@ window.onload = function () {
 var move = document.getElementById('move');
 var parallaxMove = new Parallax(move);
 
+//---------------------------------------------------------------------------------
 
 // Коприрование при клике
 const copies = document.querySelectorAll('.work__contact');
@@ -406,6 +399,7 @@ function alertCopy() {
     setTimeout(_ => div.remove(), 1000);
 }
 
+//---------------------------------------------------------------------------------
 
 // Смена языка
 (function ($) {
@@ -452,10 +446,12 @@ function alertCopy() {
         translate.process();
     }
 
-    loadNewLang('eu');
+    loadNewLang('ru');
 
     $('.lang__switch').on('click', function (e) {
         e.preventDefault();
+        $('.lang__switch').css('display', 'flex');
+
         let lang = $(this).attr('id'),
             oldLang = $('.lang__choose').attr('id'),
             flag = $(this).find('.switch__flag').attr('src');
@@ -467,18 +463,34 @@ function alertCopy() {
             case 'ru':
                 $('.slide__input').attr('placeholder', 'Ну, а зачем ты все это стер?');
                 break;
-            case 'eu':
+            case 'en':
                 $('.slide__input').attr('placeholder', 'Well, why did you erase it all?');
                 break;
-            case 'ua':
+            case 'uk':
                 $('.slide__input').attr('placeholder', 'Ну, а навіщо ти все це стер?');
                 break;
             default:
                 break;
         }
 
+        $(this).css('display', 'none');
+
         loadNewLang(lang);
 
     });
 
+    // скрыть уже выбранный язык при загрузке
+    let newId = $('.lang__choose').attr('id');
+    $(`.lang__switch#${newId}`).css('display', 'none');
+
 })(jQuery);
+
+//---------------------------------------------------------------------------------
+
+// Прлоудер
+let preloader = document.querySelector('.preloader')
+document.documentElement.classList.add('_lock');
+window.onload = function () {
+    preloader.classList.add('_loaded');
+    document.documentElement.classList.remove('_lock');
+}

@@ -2,7 +2,7 @@
     "nav__welcome": "Welcome",
     "projects": "Projects",
     "skills": "Skills",
-    "who?": "Who?",
+    "who?": "About",
     "contacts": "Contacts",
     "wellcome__good-afternoon": "Good afternoon",
     "wellcome__and-wellcome": "and welcome",
@@ -11,8 +11,8 @@
     "offer__description": "Here are some of my most recent projects made over the past year",
     "slide__This-portfolio": "This-portfolio",
     "slide__link0": "link",
-    "end__description": "more projects are soon",
+    "end__description": "more projects are coming soon",
     "About__Me": "About Me",
-    "about__text": "Hey! My name is Andrey Evgenievich. I am a junior Web developer, based in Russia, Novosibirsk. I am currently actively studying React JS and Node JS libraries. I am constantly learning new design tools and Web technologies along with new trends. Outside of work or self-study, I am interested in architecture, video games and learning new things, everything that inspires.",
+    "about__text": "Hey! My name is Andrey. I am a junior Web developer, based in Russia, Novosibirsk. I am currently actively studying React JS and Node JS libraries. I am constantly learning new design tools and Web technologies along with new trends. Outside of work or self-study, I am interested in architecture, video games and learning new things, everything that inspires.",
     "work__together": "Let’s Work Together"
 }
