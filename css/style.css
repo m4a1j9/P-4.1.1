@@ -2854,6 +2854,7 @@ main .wellcome .wellcome__container div._animate {
 
 .work .work__container-content .work__contacts .work__contact img {
   margin: 5px;
+  pointer-events: none;
 }
 
 .work .work__container-content .work__contacts .work__contact._animate {
