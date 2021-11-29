@@ -332,9 +332,14 @@ if (animItems1.length > 0 || animItems2.length > 0) {
     }
 }
 
+// Прлоудер
+let preloader = document.querySelector('.preloader')
+document.documentElement.classList.add('_lock');
 // Вертикальный parallax
 window.onload = function () {
     const parallaxes = document.querySelectorAll('.parallax');
+    preloader.classList.add('_loaded');
+    document.documentElement.classList.remove('_lock');
 
     //высота документа
     let scrollHeight = Math.max(
@@ -487,10 +492,3 @@ function alertCopy() {
 
 //---------------------------------------------------------------------------------
 
-// Прлоудер
-let preloader = document.querySelector('.preloader')
-document.documentElement.classList.add('_lock');
-window.onload = function () {
-    preloader.classList.add('_loaded');
-    document.documentElement.classList.remove('_lock');
-}
