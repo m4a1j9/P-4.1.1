@@ -93,6 +93,8 @@ jQuery(function ($) {
             scrollTop: $(id).offset().top
         }, 1000);
 
+        $('.nav').removeClass('_active');
+
         return false;
     });
 
